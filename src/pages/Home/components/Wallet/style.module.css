@@ -1,0 +1,9 @@
+.wallet {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'bauhaus 93';
+  font-size: inherit;
+  cursor: pointer;
+}
+

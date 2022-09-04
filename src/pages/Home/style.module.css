@@ -1,0 +1,118 @@
+.home {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.logo>img {
+  height: 60%;
+  margin-left: 20px;
+}
+
+.logo > img:last-of-type {
+  height: 80%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+  background-color: var(--bg-secondary);
+  column-gap: 16px;
+}
+
+.nav>.summary {
+  flex: 1.5;
+  text-indent: 2em;
+  line-height: 1.4em;
+  color: rgb(49, 49, 49);
+  padding: 1em;
+}
+
+.nav>ul {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 1em;
+  font-size: 2em;
+  font-family: 'bauhaus 93';
+  margin-right: 36px;
+}
+
+.stripe {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    var(--bg-primary) 11%,
+    var(--bg-secondary) 11% 22%,
+    var(--bg-primary) 22% 33%,
+    var(--bg-secondary) 33% 44%,
+    var(--bg-primary) 44% 55%,
+    var(--bg-secondary) 55% 66%,
+    var(--bg-primary) 66% 77%,
+    var(--bg-secondary) 77% 88%,
+    var(--bg-primary) 88%
+  );
+  border-bottom: 2px solid var(--bg-secondary);
+}
+
+.banner {
+  background: url(../../images/block.svg) no-repeat center 40%;
+  background-size: 75% 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100%;
+}
+
+.banner > h1 {
+  color: var(--color-secondary);
+  font-size: 42vmin;
+  font-family: 'bauhaus 93';
+  line-height: 1em;
+}
+
+.banner > input {
+  margin-bottom: 2em;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 0 10px;
+  background: var(--bg-secondary);
+  outline-color: var(--bg-primary);
+  width: 215px;
+}
+
+.banner > input::placeholder {
+  color: var(--bg-primary);
+}
+
+.banner > button {
+  width: 200px;
+  height: 90px;
+  background-color: var(--bg-secondary);
+  border: none;
+  font-size: 4em;
+  cursor: pointer;
+  font-family: 'bauhaus 93';
+  border-radius: 4px;
+}
+
+@media (max-width: 1045px) {
+  .nav>.summary {
+    flex: 1;
+  }
+
+  .banner > h1 {
+    font-size: 34vmin;
+  }
+}

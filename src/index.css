@@ -1,0 +1,45 @@
+:root {
+  --bg-primary: #300E3D;
+  --bg-secondary: #9F7E58;
+  --color-secondary: var(--bg-secondary);
+}
+
+@font-face {
+  font-family: 'bauhaus 93';
+  src: url('./fonts/bauhaus-93/BAUHS93.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--bg-primary);
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin: 0;
+}
