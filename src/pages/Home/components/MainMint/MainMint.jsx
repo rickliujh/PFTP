@@ -28,6 +28,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                     gasLimit: BigNumber.from(6008000)
                 });
                 console.log(response);
+                setMsg("watting to confirm...")
             } catch (err) {
                 console.log("error: ", err);
                 setMsg("something went wrong")
