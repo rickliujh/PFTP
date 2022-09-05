@@ -3,7 +3,7 @@ import { ethers, BigNumber, Wallet } from 'ethers'
 import styles from './style.module.css'
 import PftpNft from '../../../../PFTP.json'
 
-const PftpNftAddress = "0xeB78a848db79d8d384F9650141BFF82D58F49D32";
+const PftpNftAddress = "0x2C14059AE248B796A86b24af4421D7BbD96DDF91";
 
 const MainMint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
