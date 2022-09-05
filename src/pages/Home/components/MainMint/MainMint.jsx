@@ -25,7 +25,7 @@ const MainMint = ({ accounts, setAccounts }) => {
 
             try {
                 const response = await contract.mint(await signer.getAddress(), BigNumber.from(mintAmount), {
-                    gasLimit: BigNumber.from(3000000)
+                    gasLimit: BigNumber.from(1000000)
                 });
                 console.log(response);
                 setMsg("watting to confirm...")
