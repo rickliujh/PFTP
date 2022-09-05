@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './style.module.css'
 import whiteLogo from '../../images/white.svg'
 import NFTLogo from '../../images/NFT.jpg'
@@ -22,7 +22,7 @@ const Home = () => {
           <ul>
             <li><a href="#">team</a></li>
             <li><a href="#">twitter</a></li>
-            <li><a href="#">route</a></li>
+            <li><a href="#">about</a></li>
             <li><Wallet accounts={accounts} setAccounts={setAccounts} /></li>
           </ul>
         </nav>
